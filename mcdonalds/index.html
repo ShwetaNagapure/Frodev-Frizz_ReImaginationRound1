@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Splash Screen</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+        }
+        #splash-screen {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #splash-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="splash-screen">
+        <img src="./image/Mcdonalds Timesquare — Tyler Wergin_ Design & Animation.gif" alt="Loading...">
+    </div>
+    <script>
+       
+        setTimeout(() => {
+            window.location.href = 'homepage.html';
+        }, 14000);
+    </script>
+</body>
+</html>
