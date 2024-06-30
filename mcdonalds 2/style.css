@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background: #ff842c;
+    
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -14,6 +14,7 @@ header {
 }
 
 nav {
+    width:auto;
     display: flex;
     align-items: center;
     column-gap: 25px;
@@ -24,10 +25,11 @@ nav {
 nav .logo img {
     width: 100px; /* Adjust as needed */
     height: auto;
+   
 }
 
 nav .gif img{
-    width: 100px; /* Adjust as needed */
+    width: auto; /* Adjust as needed */
     height: 95px;
     margin-left: 20px;
     border-style:hidden;
@@ -37,7 +39,8 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    margin-left:900px;
+    width: 70%;
+    margin-left:850px;
     padding: 0;
 }
 
@@ -65,23 +68,27 @@ nav ul li a:hover{
     padding-top:40px;
     align-items:center;
     color: rgb(228, 228, 228);
+    width:1470px
 }
 .right{
-    width: 560px;
+    width: 500px;
     height:500px;
     background-image: url('./image/food');
     background-size:cover;
     display: flex;
+   padding-right: 100px;
+   margin-right: 100px;
+   margin-bottom: 150px;
     
    
    
    
 }
 .right::before{
-    width: 430px;
-    height: 430px;
+    width: 450px;
+    height: 400px;
     content: '';
-    position: absolute;
+    
     border-radius: 430px;
     padding:10px;
 }
@@ -124,7 +131,7 @@ nav ul li a:hover{
     background-image: url('./image/food3.jpeg');
 }
 .menu{
-    display: flex;
+    display:inline-flex;
     margin:0px 100px;
 }
 
@@ -157,10 +164,13 @@ nav ul li a:hover{
     100% { transform: translateX(-100%); }
 }
 /*  menu section starts */
+
 #menu {
     padding: 50px 20px;
     background: #f8f8f8;
     text-align: center;
+    width:1470px;
+    
 }
 
 #menu h2 {
@@ -171,7 +181,7 @@ cursor: pointer;
 }
 
 .menu-item {
-    display: inline-block;
+    
     margin: 0 15px;
     animation: slideIn 1s ease-in-out;
 }
@@ -234,6 +244,7 @@ cursor: pointer;
     background: #fff;
     text-align: center;
     display: flexbox;
+    width: 1470px;
 }
 #aboutUs h2 {
     margin-bottom: 30px;
@@ -244,6 +255,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     position: relative;
+    width: 1470px;
 }
 
 .social-icons {
@@ -317,11 +329,23 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
 /* for responsive */
-@media only screen and(max-width:850px){
+@media only screen and(max-width:830px){
    
-
+#heading h3{
+    font-size: 30px;
+}
+#heading h1{
+    font-size: 50px;
+}
+#heading p{
+    font-size: 35px;
+}
+.menu-list{
+    display: inline-block;
+}
     header{
-        width: 300px;
+        width: 120px;
+        
 
     }
    ul{
